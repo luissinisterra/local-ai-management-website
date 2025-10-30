@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: file:///home/luis/Descargas/sitemap.xml
+Sitemap: https://local-ai-management-website.pages.dev/sitemap.xml
