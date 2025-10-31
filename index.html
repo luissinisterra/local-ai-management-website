@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ollama Local AI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #4f46e5;
-            --dark: #1f2937;
-            --light: #f9fafb;
-            --gray: #6b7280;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--light);
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .hero {
-            max-width: 800px;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            background: linear-gradient(90deg, var(--primary), #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        p {
-            font-size: 1.25rem;
-            color: var(--gray);
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 2rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            text-decoration: none;
-            background: var(--primary);
-            color: white;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.25rem;
-            }
-            
-            p {
-                font-size: 1.1rem;
-            }
-            
-            .btn {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ollama Local AI - Inteligencia Artificial en tu Computadora</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-grid"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+
     <div class="hero">
-        <h1>Ollama Local AI</h1>
-        <p>Ejecuta modelos de IA avanzados de forma privada y segura directamente en tu computadora, sin necesidad de conexión a internet.</p>
-        <a href="https://github.com/luissinisterra/local-ai-management" class="btn">Descarga en Github</a>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        100% Local & Privado
+      </div>
+
+      <h1>
+        <span class="gradient-text">Ollama Local AI</span>
+      </h1>
+
+      <p class="hero-description">
+        Ejecuta modelos de IA avanzados de forma privada y segura directamente
+        en tu computadora,
+        <strong>sin necesidad de conexión a internet.</strong>
+      </p>
+
+      <div class="hero-features">
+        <div class="feature-pill">
+          <i class="fas fa-check-circle"></i>
+          Sin límites de uso
+        </div>
+        <div class="feature-pill">
+          <i class="fas fa-check-circle"></i>
+          Privacidad total
+        </div>
+        <div class="feature-pill">
+          <i class="fas fa-check-circle"></i>
+          Open Source
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a
+          href="https://github.com/luissinisterra/local-ai-management"
+          class="btn btn-primary"
+        >
+          <i class="fas fa-download"></i>
+          Descargar Ahora
+        </a>
+        <a href="features/" class="btn btn-outline">
+          <i class="fas fa-book-open"></i>
+          Ver Tutoriales
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Funcionalidades</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Offline</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Sin Límites</div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>

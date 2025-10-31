@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutoriales - Ollama Local AI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="features-styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="../" class="logo">
+          <span class="logo-icon">🤖</span>
+          Ollama Local AI
+        </a>
+        <a href="../" class="back-link">
+          <i class="fas fa-arrow-left"></i>
+          Volver al inicio
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="features-hero">
+      <div class="container">
+        <h1>Guía Completa de Funcionalidades</h1>
+        <p>
+          Aprende a usar todas las capacidades de Ollama Local AI paso a paso
+        </p>
+      </div>
+    </section>
+
+    <!-- Features List -->
+    <section class="features-section">
+      <div class="container">
+        <!-- Feature 1 -->
+        <article class="feature-item" id="feature-1">
+          <div class="feature-content">
+            <div class="feature-number">01</div>
+            <h2>Ver Modelos Instalados</h2>
+            <p class="feature-description">
+              Consulta todos los modelos de inteligencia artificial que tienes
+              disponibles en tu sistema local. Esta función te permite
+              visualizar información detallada como el tamaño, versión y
+              parámetros de cada modelo.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Accede al listado completo de tus modelos instalados</li>
+                <li>Visualiza el tamaño en disco de cada modelo</li>
+                <li>Consulta la cantidad de parámetros (7B, 13B, 70B, etc.)</li>
+                <li>
+                  Identifica rápidamente qué modelos están disponibles para usar
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Tip:</strong> Los modelos con más parámetros
+                generalmente ofrecen respuestas más precisas, pero requieren más
+                recursos de tu computadora.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/4f46e5/ffffff/png?text=Lista+de+Modelos"
+              alt="Ver modelos instalados"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="feature-item reverse" id="feature-2">
+          <div class="feature-content">
+            <div class="feature-number">02</div>
+            <h2>Eliminar un Modelo</h2>
+            <p class="feature-description">
+              Libera espacio en tu disco eliminando modelos que ya no necesitas.
+              Esta función es útil cuando quieres probar nuevos modelos pero
+              tienes espacio limitado en tu computadora.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Selecciona el modelo que deseas eliminar de la lista</li>
+                <li>
+                  Confirma la eliminación para evitar borrados accidentales
+                </li>
+                <li>El sistema libera automáticamente el espacio en disco</li>
+                <li>
+                  Puedes volver a descargar el modelo en cualquier momento
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>⚠️ Importante:</strong> Asegúrate de no estar usando el
+                modelo antes de eliminarlo. Si tienes dudas, descarga un modelo
+                de respaldo primero.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/f43f5e/ffffff/png?text=Eliminar+Modelo"
+              alt="Eliminar modelo"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="feature-item" id="feature-3">
+          <div class="feature-content">
+            <div class="feature-number">03</div>
+            <h2>Descargar Nuevo Modelo</h2>
+            <p class="feature-description">
+              Expande tus capacidades descargando nuevos modelos de IA desde la
+              biblioteca de Ollama. Accede a modelos especializados en
+              diferentes tareas como programación, escritura, análisis y más.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>
+                  Explora el catálogo completo de modelos disponibles en Ollama
+                </li>
+                <li>
+                  Selecciona el modelo que mejor se adapte a tus necesidades
+                </li>
+                <li>Observa el progreso de descarga en tiempo real</li>
+                <li>
+                  El modelo queda disponible inmediatamente después de la
+                  descarga
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Modelos populares:</strong> Llama 2 (general),
+                CodeLlama (programación), Mistral (rápido y eficiente), Phi-2
+                (ligero para computadoras modestas).
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/10b981/ffffff/png?text=Descargar+Modelo"
+              alt="Descargar modelo"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="feature-item reverse" id="feature-4">
+          <div class="feature-content">
+            <div class="feature-number">04</div>
+            <h2>Iniciar Chat con un Modelo</h2>
+            <p class="feature-description">
+              Comienza una conversación interactiva con cualquier modelo
+              instalado. Realiza preguntas, pide ayuda con código, genera
+              contenido creativo o simplemente mantén una conversación natural.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Selecciona el modelo con el que quieres conversar</li>
+                <li>Escribe tu mensaje o pregunta en lenguaje natural</li>
+                <li>Recibe respuestas instantáneas y contextuales</li>
+                <li>Mantén conversaciones largas con memoria del contexto</li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Tip:</strong> Sé específico en tus preguntas para
+                obtener mejores respuestas. Puedes pedirle al modelo que adopte
+                roles específicos (profesor, programador, escritor, etc.).
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/3b82f6/ffffff/png?text=Chat+Interactivo"
+              alt="Iniciar chat"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 5 -->
+        <article class="feature-item" id="feature-5">
+          <div class="feature-content">
+            <div class="feature-number">05</div>
+            <h2>Cambiar el Modelo Activo</h2>
+            <p class="feature-description">
+              Alterna entre diferentes modelos de IA durante una conversación
+              sin perder tu progreso. Perfecto para comparar respuestas o usar
+              modelos especializados según la tarea.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Cambia de modelo en cualquier momento durante el chat</li>
+                <li>El historial de conversación se mantiene intacto</li>
+                <li>
+                  Compara respuestas de diferentes modelos al mismo prompt
+                </li>
+                <li>
+                  Optimiza tu flujo de trabajo usando el modelo ideal para cada
+                  tarea
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Estrategia:</strong> Usa modelos ligeros para
+                borradores rápidos y modelos más grandes para refinamientos y
+                tareas complejas.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/8b5cf6/ffffff/png?text=Cambiar+Modelo"
+              alt="Cambiar modelo"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 6 -->
+        <article class="feature-item reverse" id="feature-6">
+          <div class="feature-content">
+            <div class="feature-number">06</div>
+            <h2>Consultar el Clima</h2>
+            <p class="feature-description">
+              Integra información meteorológica en tiempo real directamente en
+              tus conversaciones. Obtén datos precisos del clima de cualquier
+              ciudad del mundo sin salir de la aplicación.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Solicita información del clima de cualquier ubicación</li>
+                <li>
+                  Recibe datos actualizados: temperatura, humedad, condiciones
+                </li>
+                <li>
+                  Consulta pronósticos extendidos y alertas meteorológicas
+                </li>
+                <li>
+                  Combina con IA para obtener recomendaciones basadas en el
+                  clima
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Ejemplo:</strong> "¿Qué clima hace en Bogotá?" o
+                "¿Debería llevar paraguas mañana en Medellín?"
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/06b6d4/ffffff/png?text=Consultar+Clima"
+              alt="Consultar clima"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 7 -->
+        <article class="feature-item" id="feature-7">
+          <div class="feature-content">
+            <div class="feature-number">07</div>
+            <h2>Ver Historial de Conversación</h2>
+            <p class="feature-description">
+              Accede a todas tus conversaciones anteriores con los modelos de
+              IA. Revisa, busca y recupera información de chats pasados en
+              cualquier momento.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Navega por todas tus conversaciones históricas</li>
+                <li>Busca mensajes específicos usando palabras clave</li>
+                <li>Filtra por fecha, modelo usado o tipo de conversación</li>
+                <li>
+                  Continúa conversaciones anteriores desde donde las dejaste
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Productividad:</strong> Usa el historial para
+                encontrar soluciones que ya generaste anteriormente y evitar
+                repetir preguntas.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/f59e0b/ffffff/png?text=Historial+Chat"
+              alt="Ver historial"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 8 -->
+        <article class="feature-item reverse" id="feature-8">
+          <div class="feature-content">
+            <div class="feature-number">08</div>
+            <h2>Borrar Historial</h2>
+            <p class="feature-description">
+              Mantén tu privacidad eliminando el historial de conversaciones
+              cuando lo necesites. Útil para liberar espacio o comenzar fresh
+              con un nuevo contexto.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Elimina conversaciones individuales o todo el historial</li>
+                <li>
+                  Confirmación de seguridad antes de borrar para evitar pérdidas
+                  accidentales
+                </li>
+                <li>Libera espacio de almacenamiento en tu dispositivo</li>
+                <li>
+                  Comienza con un contexto limpio para nuevas conversaciones
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>⚠️ Nota:</strong> El borrado es permanente. Si necesitas
+                conservar información importante, considera exportarla primero.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/ef4444/ffffff/png?text=Borrar+Historial"
+              alt="Borrar historial"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 9 -->
+        <article class="feature-item" id="feature-9">
+          <div class="feature-content">
+            <div class="feature-number">09</div>
+            <h2>Configurar Modelo Predeterminado</h2>
+            <p class="feature-description">
+              Establece qué modelo de IA se carga automáticamente al iniciar la
+              aplicación. Ahorra tiempo configurando tu modelo favorito como
+              predeterminado.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>
+                  Selecciona tu modelo preferido de la lista de instalados
+                </li>
+                <li>
+                  La aplicación cargará automáticamente este modelo al iniciar
+                </li>
+                <li>Cambia el modelo predeterminado en cualquier momento</li>
+                <li>Agiliza tu flujo de trabajo con tu modelo más usado</li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Recomendación:</strong> Establece como predeterminado
+                el modelo que uses con más frecuencia para tus tareas diarias.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/ec4899/ffffff/png?text=Modelo+Predeterminado"
+              alt="Configurar predeterminado"
+            />
+          </div>
+        </article>
+
+        <!-- Feature 10 -->
+        <article class="feature-item reverse" id="feature-10">
+          <div class="feature-content">
+            <div class="feature-number">10</div>
+            <h2>Ver Información del Sistema</h2>
+            <p class="feature-description">
+              Monitorea el rendimiento y recursos de tu sistema en tiempo real.
+              Consulta el uso de CPU, RAM, GPU y el estado general de la
+              aplicación y los modelos.
+            </p>
+            <div class="feature-details">
+              <h3>¿Cómo funciona?</h3>
+              <ul>
+                <li>Visualiza el uso actual de memoria RAM y CPU</li>
+                <li>Consulta el espacio disponible en disco</li>
+                <li>
+                  Verifica si tu GPU está siendo utilizada por los modelos
+                </li>
+                <li>
+                  Identifica problemas de rendimiento o cuellos de botella
+                </li>
+              </ul>
+              <div class="feature-tip">
+                <strong>💡 Optimización:</strong> Si notas alto uso de RAM,
+                considera usar modelos más pequeños o cerrar otras aplicaciones
+                mientras trabajas con IA.
+              </div>
+            </div>
+          </div>
+          <div class="feature-image">
+            <img
+              src="https://placehold.co/600x400/14b8a6/ffffff/png?text=Info+Sistema"
+              alt="Información del sistema"
+            />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>¿Listo para comenzar?</h2>
+        <p>
+          Descarga Ollama Local AI y empieza a usar inteligencia artificial de
+          forma privada y sin límites
+        </p>
+        <a
+          href="https://github.com/luissinisterra/local-ai-management"
+          class="btn btn-primary"
+        >
+          <i class="fas fa-download"></i>
+          Descargar Ahora
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2024 Ollama Local AI - Hecho con 💜 para la comunidad</p>
+      </div>
+    </footer>
+
+    <script src="features-script.js"></script>
+  </body>
+</html>
