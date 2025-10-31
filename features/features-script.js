@@ -33,7 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Add parallax effect to images
-window.addEventListener("scroll", () => {
+/*window.addEventListener("scroll", () => {
   const scrolled = window.pageYOffset;
   const images = document.querySelectorAll(".feature-image");
 
@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
     const yPos = -(scrolled * speed);
     img.style.transform = `translateY(${yPos}px)`;
   });
-});
+});*/
 
 // Add hover effect to feature items
 const featureItems = document.querySelectorAll(".feature-item");
