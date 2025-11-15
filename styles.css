@@ -45,6 +45,7 @@ body {
   background-size: 50px 50px;
   z-index: 0;
   animation: gridMove 20s linear infinite;
+  will-change: transform;
 }
 
 @keyframes gridMove {
@@ -167,17 +168,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradientShift 3s ease infinite;
-}
-
-@keyframes gradientShift {
-  0%,
-  100% {
-    background-position: 0% center;
-  }
-  50% {
-    background-position: 100% center;
-  }
 }
 
 .hero-description {
@@ -218,7 +208,9 @@ h1 {
   font-size: 0.875rem;
   font-weight: 500;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease,
+    background-color 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
 }
 
 .feature-pill:hover {
@@ -229,6 +221,16 @@ h1 {
 .feature-pill i {
   color: var(--primary);
   font-size: 1rem;
+}
+
+/* Inline SVG icon utility */
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  color: var(--primary);
+  flex: 0 0 auto;
 }
 
 /* Buttons */
@@ -250,9 +252,11 @@ h1 {
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   border: 2px solid transparent;
   cursor: pointer;
+  will-change: transform;
 }
 
 .btn i {
