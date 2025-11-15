@@ -360,6 +360,21 @@ h1 {
   .orb-2 {
     opacity: 0.2;
   }
+
+  /* Mobile performance: avoid delaying FCP/LCP with entrance animations */
+  .hero,
+  h1,
+  .hero-badge,
+  .hero-description,
+  .hero-features,
+  .hero-buttons,
+  .hero-stats {
+    animation: none !important;
+  }
+
+  .gradient-text {
+    animation: none !important;
+  }
 }
 
 @media (max-width: 480px) {
